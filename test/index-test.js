@@ -10,7 +10,7 @@ describe('managePresents', () => {
     expect(managePresents(state, { type: 'Random Action Type' })).toEqual(state);
   });
 
-  it("increases the number of presents if there the action's type is 'INCREASE'", () =>{
+  it("increases the number of presents if the action's type is 'INCREASE'", () =>{
     expect(managePresents(state, { type: "INCREASE" })).toEqual({ numberOfPresents: 1 });
   });
 
